@@ -38,7 +38,9 @@ public class DatadogClient
                             Timestamp =  ((DateTimeOffset)DateTime.UtcNow).ToUnixTimeSeconds(),
                             Value = (int)value
                         }
-                    ]
+                    ],
+                    Type = MetricType.Count,
+                    Interval = 1
                 }
            ]
         };
